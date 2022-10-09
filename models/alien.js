@@ -15,3 +15,6 @@ const alienSchema = new mongoose.Schema({
         default: false
     }
 })
+
+//Export alienschema so as to use in other files
+module.exports = mongoose.model('Alien', alienSchema)

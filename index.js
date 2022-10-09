@@ -14,6 +14,9 @@ cursor.on('open', function(){
 //If mongodb error is comming, chk to see if mongodb service is running
 //To run the module, command: npm run dev
 
+//Import json to process json data
+app.use(express.json());
+
 //Create route for aliens
 const alienRouter = require('./routes/aliens')
 app.use('/aliens', alienRouter)
