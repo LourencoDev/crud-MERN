@@ -1,5 +1,27 @@
 {
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "mongodb": "^4.10.0",
+    "mongoose": "^6.6.5"
+  },
+  "name": "crud-mern",
+  "description": "A CRUD REST API using MongoDB,Express JS and Node JS\r v1 - Following the tutorial from https://www.youtube.com/watch?v=eYVGoXPq2RA",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hkravn/crud-MERN.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hkravn/crud-MERN/issues"
+  },
+  "homepage": "https://github.com/hkravn/crud-MERN#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }
