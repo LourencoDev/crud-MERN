@@ -38,7 +38,19 @@ router.post('/', async(req,res) => {
 router.patch('/:id', async(req,res) => {
     try{
         const alien = await Alien.findById(req.params.id);
-        alien.sub = req.body.sub;
+        if (req.body.name===undefined) {
+        } else {
+            alien.name = req.body.name;
+        }
+        if (req.body.tech===undefined) {
+        } else {
+            alien.tech = req.body.tech;
+        }
+        if (req.body.sub===undefined) {
+        } else {
+            alien.sub = req.body.sub;
+        }
+        
         const a1 = await alien.save();
         res.json(a1);
     }catch(err){
